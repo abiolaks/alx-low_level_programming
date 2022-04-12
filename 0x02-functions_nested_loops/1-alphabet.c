@@ -1,9 +1,11 @@
-#include "main.h"
+int _putchar(char c);
 /**
+ * print_alphabet - disiplay characters in lower case
  * main - entry point of the program
  * Return: always return succes for 0
  */
-int main(void)
+void print_alphabet(void)
+	/* This print letters in lower case */
 {
 	int c;
 
@@ -12,5 +14,4 @@ int main(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-	return (0);
 }
