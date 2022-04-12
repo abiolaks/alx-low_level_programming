@@ -1,4 +1,4 @@
-int _putchar(char c);
+#include "main.h"
 /**
  * print_alphabet - disiplay characters in lower case
  * main - entry point of the program
