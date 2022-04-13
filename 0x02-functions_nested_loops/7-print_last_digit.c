@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_last_digit - This function prints the last digit of a number
  * Return: returns zero for success
