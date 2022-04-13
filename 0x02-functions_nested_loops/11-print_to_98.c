@@ -8,9 +8,11 @@ void print_to_98(int n)
 {
 	int i;
 
-	for (i = 0; i <= n; i++)
-	{
+	i = 0;
+	do {
 		printf("%d, ", i);
-	}
+		i++;
+	} while (i <= n);
+	putchar('\n');
 
 }
