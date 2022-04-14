@@ -36,13 +36,13 @@ void times_table(void)
 				_putchar(times / 10 + '0');
 				_putchar(times % 10 + '0');
 				_putchar(44);
-				_putchar(32);
+				_putchar(9);
 			}
 			else if (times < 10)
 			{
 				_putchar(times + '0');
 				_putchar(44);
-				_putchar(32);
+				_putchar(9);
 			}
 		}
 		_putchar(10);
