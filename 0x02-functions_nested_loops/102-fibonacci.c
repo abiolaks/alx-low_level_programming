@@ -21,11 +21,19 @@ int main(void)
 	{
 		if (j != 20365011074)
 		{
-			printf("%ld\n", j);
+			printf("%ld", j);
+		    putchar(',');
+		    putchar(' ');
+		}
+		else if (j == 20365011074)
+		{
+			printf("%ld", j);
+			break;
 		}
 		next = j + k;
 		j = k;
 		k = next;
 	}
+	putchar('\n');
 	return (0);
 }
