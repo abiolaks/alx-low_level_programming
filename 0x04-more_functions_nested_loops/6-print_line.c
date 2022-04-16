@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line -print line n times dash 
+ * print_line -print line n times dash
  * @n: nber of times character should be printed
  */
 
