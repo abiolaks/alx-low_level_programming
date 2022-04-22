@@ -9,7 +9,7 @@ void puts2(char *str)
 {
 	char *t;/* to hold the first address of str for iteration*/
 
-	for (t = str; *t != '\0'; t += 2)
+	for (t = str; *t != 0; t += 2)
 	{
 		_putchar(*t);/*print the element of display*/
 	}
