@@ -8,13 +8,16 @@
 void puts2(char *str)
 {
 	char *t;/* to hold the first address of str for iteration*/
+	int i;
+	int size = 0;
 
-	for (t = str; *t != 0; t += 2)
+	for (t = str; *t != 0; t += 1)
 	{
-		_putchar(*t);/*print the element of display*/
-
-		if (*t == '\0')
-			break;
+		size++;
+	}
+	for (i = 0; i < size; i += 2)
+	{
+		_putchar(*(str + i));
 	}
 	_putchar('\n');
 }
