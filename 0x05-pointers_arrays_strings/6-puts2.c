@@ -9,12 +9,9 @@ void puts2(char *str)
 {
 	char *t;/* to hold the first address of str for iteration*/
 
-	for (t = str; *t != '\0'; t++)
+	for (t = str; *t != '\0'; t += 2)
 	{
-		if ((*t % 2 == 0))/* the value in t is check to be even*/
-		{
-			_putchar(*t);/*print the element of display*/
-		}
+		_putchar(*t);/*print the element of display*/
 	}
 	_putchar('\n');
 }
