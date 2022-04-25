@@ -36,7 +36,9 @@ char *_strcat(char *dest, char *src)
 
 	int i = 0;
 
-	dest = dest + _strlen(dest);
+	int n = _strlen(dest);
+
+	dest = dest + n;
 
 	/* iterate through src and append each to dest */
 	for (i = 0; *(src + i) != '\0'; i++)
@@ -48,6 +50,6 @@ char *_strcat(char *dest, char *src)
 		*dest++ = *src++;
 	}
 	/* add null byte at the end of str(the new dest)*/
-	*dest = '\0';
+	*dest[n + i] = '\0';
 	return (dest);
 }
