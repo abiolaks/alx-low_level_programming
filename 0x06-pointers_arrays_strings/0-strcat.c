@@ -38,18 +38,16 @@ char *_strcat(char *dest, char *src)
 
 	int n = _strlen(dest);
 
-	dest = dest + n;
-
-	/* iterate through src and append each to dest */
 	for (i = 0; *(src + i) != '\0'; i++)
 	{
 		/*
 		 * append to src to starting from the last address of dest
 		 * which is str.
 		 */
-		*dest++ = *src++;
+		dest[n] = src[i];
+		n++;
 	}
 	/* add null byte at the end of str(the new dest)*/
-	*dest[n + i] = '\0';
+	dest[n] = '\0';
 	return (dest);
 }
