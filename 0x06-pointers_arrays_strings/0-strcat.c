@@ -45,7 +45,7 @@ char *_strcat(char *dest, char *src)
 		 * append to src to starting from the last address of dest
 		 * which is str.
 		 */
-		dest[i] = src[i];
+		*dest++ = *src++;
 	}
 	/* add null byte at the end of str(the new dest)*/
 	*dest = '\0';
