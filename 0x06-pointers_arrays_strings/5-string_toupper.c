@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** string_toupper - this capiliaxe wordes
+/**
+ * string_toupper - this capiliaxe wordes
  * @c: the argument to capitatlize
  *
  * Return: this return a pointer to char
