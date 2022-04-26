@@ -12,7 +12,7 @@ char *leet(char *c)
 	int i = 0;
 	int j = 0;
 
-	char *x = "aAeEoOtTIL";
+	char *x = "aAeEoOtTlL";
 	char *y = "4433007711";
 
 	for (i = 0; *(c + i) != 0; i++)
