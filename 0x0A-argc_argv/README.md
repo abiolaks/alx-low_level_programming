@@ -25,4 +25,4 @@ Tasks					Description
 
 1-args.c				This prints the number of arguments passed to it
 
-	
+2-args.c				prints all argument recieve on the cmd.
