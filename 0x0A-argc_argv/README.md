@@ -23,4 +23,6 @@ This solve the issue of the compiler issuing waring of unused variable and funct
 Tasks					Description
 0-whatsmyname.c			This program prints its name followed by new line
 
+1-args.c				This prints the number of arguments passed to it
+
 	
