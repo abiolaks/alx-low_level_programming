@@ -39,6 +39,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		*(dest + n) = *(s2 + n);
 	}
-	*(dest + len) = '\0';
+	*(dest + 1) = '\0';
 	return (dest);
 }
