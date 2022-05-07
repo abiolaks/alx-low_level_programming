@@ -15,6 +15,7 @@ char *_strdup(char *str)
 {
 	char *copy_str;
 	size_t i = 0;
+	size_t j;
 
 	if (str == NULL)
 	{
@@ -22,7 +23,11 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		copy_str = (char *) malloc(sizeof(char));
+		for ( j = 0; *(str + j) != 0; j++)
+		{
+			j++;
+		}
+		copy_str = (char *) malloc(sizeof(char) * j);
 
 		if (copy_str != NULL)
 		{
