@@ -23,11 +23,11 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for ( j = 0; *(str + j) != 0; j++)
+		for (j = 0; *(str + j) != 0; j++)
 		{
 			j++;
 		}
-		copy_str = (char *) malloc(sizeof(char) * j);
+		copy_str = (char *) malloc(sizeof(char) * (j + 1);
 
 		if (copy_str != NULL)
 		{
@@ -35,6 +35,7 @@ char *_strdup(char *str)
 			{
 				*(copy_str + i) = *(str + i);
 			}
+			*(copy_str + i) = '\0';
 			return (copy_str);
 		}
 		else
