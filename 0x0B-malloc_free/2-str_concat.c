@@ -36,5 +36,5 @@ char *str_concat(char *s1, char *s2)
 		*dest++ = *s2++;
 	*dest = 0;
 
-	return (dest);
+	return (ret);
 }
