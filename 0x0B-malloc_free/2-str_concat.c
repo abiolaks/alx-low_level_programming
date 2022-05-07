@@ -15,10 +15,6 @@ char *str_concat(char *s1, char *s2)
 	size_t t;
 	size_t n;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
 	i = 0;
 	while (*(s1 + i) != 0)
 	{
@@ -34,12 +30,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (dest == NULL)
 		return (NULL);
-	for (t = 0; t == i; t++)
+	for (t = 0; t < i; t++)
 	{
 		*(dest + t) = *(s1 + t);
 	}
 	dest = dest + t;
-	for (n = 0; n == j; n++)
+	for (n = 0; n < j; n++)
 	{
 		*(dest + n) = *(s2 + n);
 	}
