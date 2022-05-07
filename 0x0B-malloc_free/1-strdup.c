@@ -26,9 +26,9 @@ char *_strdup(char *str)
 
 		if (copy_str != NULL)
 		{
-			while (*str)
+			while (*(str + i) != '\0')
 			{
-				*copy_str++ = *s++;
+				*(copy_str + i) = *(str + i);
 			}
 			return (copy_str);
 		}
