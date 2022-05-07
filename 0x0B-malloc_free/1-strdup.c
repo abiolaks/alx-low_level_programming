@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (j = 0; *(str + j) != 0; j++)
+		for (j = 0; *(str + j) != '\0'; j++)
 		{
 			j++;
 		}
@@ -34,6 +34,7 @@ char *_strdup(char *str)
 			while (*(str + i) != '\0')
 			{
 				*(copy_str + i) = *(str + i);
+				i++;
 			}
 			*(copy_str + i) = '\0';
 			return (copy_str);
