@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - the entry point
@@ -28,7 +29,7 @@ int main(int argc, char *argv[])
 			while (argv[i][j] != '\0')
 			{
 
-				if (!(isdigit(argv[i][j]))jjjj)
+				if (!(isdigit(argv[i][j])))
 				{
 					printf("Error\n");
 					return (1);
