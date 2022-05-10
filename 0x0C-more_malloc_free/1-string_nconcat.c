@@ -33,12 +33,12 @@ char *string_nconcat(char *s1, char *s2, size_t n)
 		ptr[k] = s1[k];
 		k++;
 	}
-	while (*(s2 + z) != 0 && z < n)
+	while (z < n)
 	{
-		ptr[i] = s2[z];
+		ptr[i + z] = s2[z];
 		i++;
 		z++;
 	}
-	ptr[i] = '\0';
+	ptr[i + j] = '\0';
 	return (ptr);
 }
