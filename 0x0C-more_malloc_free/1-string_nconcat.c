@@ -20,12 +20,8 @@ char *string_nconcat(char *s1, char *s2, size_t n)
 	while (*s2++)
 		j++;
 	if (n >= j)
-	{
 		n = j;
-		ptr = malloc(sizeof(char) * (i + n + 1));
-	}
-	if (n < j)
-		ptr = malloc(sizeof(char) * (i + n + 1));
+	ptr = malloc(sizeof(char) * (i + n + 1));
 	if (ptr == NULL)
 		return (NULL);
 	while (k < i)
@@ -39,6 +35,6 @@ char *string_nconcat(char *s1, char *s2, size_t n)
 		i++;
 		z++;
 	}
-	ptr[i + j] = '\0';
+	ptr[i] = '\0';
 	return (ptr);
 }
