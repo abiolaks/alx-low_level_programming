@@ -16,4 +16,16 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+ * init_dog - This function header initiaze a variable of type struct
+ * dog
+ * @d: pointer to struct
+ * @name: name
+ * @age: age
+ * @owner: owner
+ *
+ * Return: returns nothing
+ */
+void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
