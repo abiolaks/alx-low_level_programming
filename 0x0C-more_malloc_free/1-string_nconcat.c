@@ -13,8 +13,10 @@ char *string_nconcat(char *s1, char *s2, size_t n)
 	char *ptr;
 	size_t i = 0, j = 0, k = 0, z = 0;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+	if (s1 == NULL)
+		return (" ");
+	if (s2 == NULL)
+		return (" ");
 	while (*s1++)
 		i++;
 	while (*s2++)
