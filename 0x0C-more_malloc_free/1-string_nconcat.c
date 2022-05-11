@@ -31,10 +31,10 @@ char *string_nconcat(char *s1, char *s2, size_t n)
 	}
 	while (z < n)
 	{
-		ptr[z + i] = s2[z];
-		i++;
+		ptr[k] = s2[z];
+		k++;
 		z++;
 	}
-	ptr[i + n] = '\0';
+	ptr[k] = '\0';
 	return (ptr);
 }
