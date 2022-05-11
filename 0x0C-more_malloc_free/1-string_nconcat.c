@@ -14,9 +14,9 @@ char *string_nconcat(char *s1, char *s2, size_t n)
 	size_t i = 0, j = 0, k = 0, z = 0;
 
 	if (s1 == NULL)
-		return ("" );
+		*s1 = "";
 	if (s2 == NULL)
-		return ("");
+		*s2 = "";
 	while (*s1++)
 		i++;
 	while (*s2++)
