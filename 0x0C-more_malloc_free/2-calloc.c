@@ -10,12 +10,15 @@
 void *_calloc(size_t nmemb, size_t size)
 {
 	void *ptr;
+	size_t i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = calloc(nmemb, sizeof(size));
+	ptr = malloc(sizeof(size) * nmemb);
 	if (ptr == NULL)
 		return (NULL);
+	for (i = 0; i < (size * nmemb); i++)
+		*(ptr + i) = 0;
 	return (ptr);
 }
