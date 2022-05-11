@@ -15,7 +15,7 @@ void *_calloc(size_t nmemb, size_t size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	ptr = calloc(nmemb, size);
+	ptr = calloc(nmemb, sizeof(size));
 	if (ptr == NULL)
 		return (NULL);
 //	for (i = 0; i < (size * nmemb); i++)
