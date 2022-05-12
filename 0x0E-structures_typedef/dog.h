@@ -10,12 +10,12 @@
  * Return: return nothing
  */
 
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog_t;
 
 /**
  * init_dog - This function header initiaze a variable of type struct
