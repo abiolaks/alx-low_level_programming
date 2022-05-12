@@ -25,7 +25,8 @@ struct dog
  * @age: age
  * @owner: owner
  *
- * Return: returns nothing
+ * Description: The above initialize the name, age and owner of
+ * a dog.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 #endif
