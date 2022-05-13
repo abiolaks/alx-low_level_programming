@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
  * main - entry point
- * @argc: arg count
- * @argv: arg vector
  *
- * Return: an int
+ * Return: void
  */
 
 int main(void)
