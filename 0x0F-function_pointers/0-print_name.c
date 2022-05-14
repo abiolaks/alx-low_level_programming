@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * print_name - print a name
  * @name: a pointer to char
@@ -12,12 +13,9 @@ void print_name(char *name, void (*f)(char *))
 	 * checking the pass pointer that is not null
 	 * name and f
 	 */
-	if (name == NULL || f == NULL)
-	{
-		return;
-	}
-	else
-	{
+
+	if (name != NULL || f != NULL)
 		f(name);
-	}	
+	else
+		return;
 }
