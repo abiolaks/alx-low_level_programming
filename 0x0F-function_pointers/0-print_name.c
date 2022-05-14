@@ -12,7 +12,7 @@ void print_name(char *name, void (*f)(char *))
 	 * checking the pass pointer that is not null
 	 * name and f
 	 */
-	if (name != NULL && f != NULL)
+	if (name != NULL || f != NULL)
 		f(name);
 }
 
