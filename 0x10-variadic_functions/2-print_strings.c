@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdio.h>
 
 /**
  * print_ptrings - prints ptrings.
@@ -7,7 +8,7 @@
  *
  * Return: nothing.
  */
-void print_ptrings(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list arg_param;
 	unsigned int i;
