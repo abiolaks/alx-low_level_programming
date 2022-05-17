@@ -3,9 +3,9 @@
 #include <stdarg.h>
 
 /**
- * print_ptrings - prints ptrings.
- * @separator: ptring to be printed between the ptrings.
- * @n: number of ptrings passed to the function.
+ * print_strings - prints strings.
+ * @separator: string to be printed between the ptrings.
+ * @n: number of strings passed to the function.
  *
  * Return: nothing.
  */
