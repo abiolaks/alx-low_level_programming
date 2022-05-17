@@ -8,16 +8,16 @@
  *
  * Return: return sum else return o if n == 0
  */
-int sum_them_all(const size_t n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list ap;
+
+	if (n == 0)
+		return (0);
 
 	va_start(ap, n);
 
 	size_t i = 0;
-
-	if (n == 0)
-		return (0)
 
 	int sum = 0;
 
