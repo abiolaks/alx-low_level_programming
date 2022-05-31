@@ -10,7 +10,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int a[] = {1, 2, 4, 8, 16, 32, 64, 128};
+	int a[] = {1, 2, 4, 8, 16, 32, 64, 128, 256};
 	size_t _uint = 0;
 	size_t i = 0;
 	size_t k = 0;
