@@ -10,15 +10,19 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int a[] = {1, 2, 4, 8, 16, 32, 64, 128, 256}
-	size_t _uint = 0, i = 0, k = 0, n = 0, count = 0;
+	int a[] = {1, 2, 4, 8, 16, 32, 64, 128, 256};
+	size_t _uint = 0;
+	size_t i = 0;
+	size_t k = 0;
+	size_t n = 0;
+	size_t count = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 
-	while (b[i] != 0)
+	while (b[i] != '\0')
 	{
-		if (b[i] != 1 && b[i] != 0)
+		if (b[i] != '1' && b[i] != '0')
 		{
 			return (0);
 		}
